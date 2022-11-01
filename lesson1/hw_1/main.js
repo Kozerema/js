@@ -49,3 +49,10 @@ console.log(typeof c);
 // console.log(!!undefined); false
 // console.log(!!NaN); false
 
+let name=prompt('Як вас звати?','')
+console.log('Привіт, '+name);
+let surname=prompt('Як вас по-батькові?','Ведіть');
+console.log('Результат: '+surname);
+let age=prompt('Введіть свій вік','')
+console.log('Вік: '+age);
+
