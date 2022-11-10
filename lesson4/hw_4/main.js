@@ -69,7 +69,7 @@
 // for( let simpson of simpsons){
 //         document.write(` <h1>${simpson.name}</h1>
 //  <p>
-//  <img src="${simpson.photo}" alt="simpson">
+//  <img src="${simpson.photo}" alt="${simpson.name}">
 // </p> `)
 // }
 //
@@ -80,6 +80,15 @@
 // </ul>
 // </h1>`)
 // }
+
+//while
+
+// let i=0;
+// while (i<10){
+//     document.write(`<h1>Text</h1>`)
+//     i++;
+// }
+
 
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
@@ -144,7 +153,7 @@
 // for (const product of products) {
 //     document.write(` <div class="product-card">
 //          <h3 class="product-title"> Title -  ${product.title}. Price - ${product.price}</h3>
-// <img src="${product.image}" alt="product" class="product-image">
+// <img src="${product.image}" alt="${product.title}" class="product-image">
 //
 //  </div>
 //     `)
