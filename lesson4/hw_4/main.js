@@ -69,7 +69,7 @@
 // for( let simpson of simpsons){
 //         document.write(` <h1>${simpson.name}</h1>
 //  <p>
-//  <img src="${simpson.photo}" alt="">
+//  <img src="${simpson.photo}" alt="simpson">
 // </p> `)
 // }
 //
@@ -101,12 +101,11 @@
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 
 // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-// for (let listOfItem of listOfItems){
-//     document.write(` <ul>
+// for (let listOfItem of listOfItems)<ul>{
+//     document.write(`
 //     <li>${listOfItem}</li>
-// </ul>
 //     `)
-// }
+// }</ul>
 
 //Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
@@ -145,7 +144,7 @@
 // for (const product of products) {
 //     document.write(` <div class="product-card">
 //          <h3 class="product-title"> Title -  ${product.title}. Price - ${product.price}</h3>
-// <img src="${product.image}" alt="" class="product-image">
+// <img src="${product.image}" alt="product" class="product-image">
 //
 //  </div>
 //     `)
