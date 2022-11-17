@@ -85,7 +85,7 @@
 
 // let i=0;
 // while (i<10){
-//     document.write(`<h1>Text</h1>`)
+//     document.write(`<h1> ${i} Text</h1>`)
 //     i++;
 // }
 
