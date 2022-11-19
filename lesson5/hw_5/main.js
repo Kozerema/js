@@ -1,27 +1,27 @@
 //- створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-// function S(a,b){
-//         return a*b
-// }
-// let s1=S(20,15)
-// console.log(s1);
-// let s =(a,b)=>a*b;
+//  function s(a,b){
+//          return a*b
+//  }
+//  let s1=s(20,15)
+//  console.log(s1);
+//  let s =(a,b)=>a*b;
 // console.log(s(12,2))
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-// function S(radius){
-//         return 2*Math.PI*radius;
-// }
-// let s1 = S(4)
-// console.log(s1)
+//  function s(radius){
+//          return 2*Math.PI*radius;
+//  }
+//  let s1 = s(4)
+//  console.log(s1)
 // const S=(r)=>Math.PI*Math.pow(r,2)
-// console.log(S(2))
+//  console.log(s(2))
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-// function S(hight,radius){
-//         return Math.floor(2*Math.PI*radius*(hight+radius))
-// }
-// let s1 =S(3,2);
-// console.log(s1);
+//  function s(hight,radius){
+//          return Math.floor(2*Math.PI*radius*(hight+radius))
+//  }
+//  let s1 =s(3,2);
+//  console.log(s1);
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 // function array(arr){
@@ -70,7 +70,7 @@
 //     document.write(`</ul>`)
 // }
 // let matrix=[483,'fije',true]
-// arr(matrix)
+// console.log(arr(matrix))
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
@@ -81,7 +81,7 @@
 //         document.write(` <div>${arrayElement.name}${arrayElement.age}</div>`)
 //     }
 // }
-// arr(users)
+// console.log(arr(users))
 
 // - створити функцію яка повертає найменьше число з масиву
 //  function arr(array){
@@ -97,7 +97,9 @@
 // return arr2
 // }
 // let matrix=[6,-7,15];
-// console.log(arr(matrix))
+// let a = arr(matrix)
+// console.log(a)
+//другий масив не потрібний
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 // function arr(array){
@@ -110,5 +112,6 @@
 //
 // }
 // let matrix =[15,15,15]
-//   console.log(arr(matrix))
+// let a= arr(matrix)
+//   console.log(a);
 
