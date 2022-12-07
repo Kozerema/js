@@ -8,16 +8,16 @@
 //     this.email=email;
 //     this.phone=phone;
 // }
-// let users=[user1= new User(1,'olia','hhhh','jkck',9654),
-//  user2= new User(9,'olia','hhhh','jkck',9654),
-//  user3= new User(3,'olia','hhhh','jkck',9654),
-//  user4= new User(2,'olia','hhhh','jkck',9654),
-//  user5= new User(5,'olia','hhhh','jkck',9654),
-//  user6= new User(6,'olia','hhhh','jkck',9654),
-//  user7= new User(7,'olia','hhhh','jkck',9654),
-//  user8= new User(4,'olia','hhhh','jkck',9654),
-//  user9= new User(8,'olia','hhhh','jkck',9654),
-//  user10= new User(10,'olia','hhhh','jkck',9654)];
+// let users=[ new User(1,'olia','hhhh','jkck',9654),
+//     new User(9,'olia','hhhh','jkck',9654),
+//     new User(3,'olia','hhhh','jkck',9654),
+//     new User(2,'olia','hhhh','jkck',9654),
+//     new User(5,'olia','hhhh','jkck',9654),
+//     new User(6,'olia','hhhh','jkck',9654),
+//     new User(7,'olia','hhhh','jkck',9654),
+//     new User(4,'olia','hhhh','jkck',9654),
+//     new User(8,'olia','hhhh','jkck',9654),
+//      new User(10,'olia','hhhh','jkck',9654)];
 //  usersNew=[];
 // usersNew.push(users);
 // console.log(users)
@@ -170,22 +170,23 @@
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //
-// function Girl (name, age, foodSize){
-//     this.name=name;
-//     this.age=age;
-//     this.foodSize=foodSize;
+// function Girl(name, age, foodSize) {
+//     this.name = name;
+//     this.age = age;
+//     this.foodSize = foodSize;
 // }
-// let girls=[
-//     girl1= new Girl('Sonia',22,36),
-//     girl2= new Girl('Lisa',24,37),
-//     girl3= new Girl('Tania',26,38),
-//     girl4= new Girl('Mania',27,39),
-//     girl5= new Girl('Lilia',29,37),
-//     girl6= new Girl('Mia',21,37,7),
-//     girl7= new Girl('Soia',29,38,7),
-//     girl8= new Girl('Halia',28,40),
-//     girl9= new Girl('Roksolana',22,34),
-//     girl10= new Girl('Nadia',21,39,2)]
+//
+// let girls = [
+//     new Girl('Sonia', 22, 36),
+//     new Girl('Lisa', 24, 37),
+//     new Girl('Tania', 26, 38),
+//     new Girl('Mania', 27, 39),
+//     new Girl('Lilia', 29, 37),
+//     new Girl('Mia', 21, 37, 7),
+//     new Girl('Soia', 29, 38, 7),
+//     new Girl('Halia', 28, 40),
+//     new Girl('Roksolana', 22, 34),
+//     new Girl('Nadia', 21, 39, 2)]
 //
 // class Boy{
 //     constructor(name, age, foodSize) {
