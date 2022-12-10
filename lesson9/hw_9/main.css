@@ -1,0 +1,18 @@
+.member{
+    background: silver;;
+    border: 2px solid black;
+}
+.num1{
+    height: 100%;
+    background: plum;
+
+}
+.wrap{
+    background: silver;
+  font-size: medium;
+    color: black;
+
+}
+.item{
+    background: gray;
+}
