@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let url = new URL(location.href)
+    let id = url.searchParams.get('id')
+    fetch('https://jsonplaceholder.typicode.com/users/' + id)
+        .then(value => value.json())
+        .then(value => {
+            console.log(value)
+            for (const userNew in value) {
+                let div = document.createElement('div')
+                if (typeof value[userNew] !== "object") {
+                    div.innerText = `${userNew}: ${value[userNew]}`
+                } else {
+                    div.innerText = `${userNew}:`
+                    for (const key in value[userNew]) {
+                        let div1 = document.createElement('div')
+                        if (typeof value[userNew][key] !== 'object') {
+                            div1.innerText = `${key}: ${value[userNew][key]}`
+
+                        } else {
+                            div1.innerText = `${key}`
+                            for (const div1Key in value[userNew][key]) {
+                                let div2 = document.createElement('div')
+                                if (typeof value[userNew][key][div1Key] !== 'object') {
+                                    div2.innerText = `${div1Key} ${value[userNew][key][div1Key]}`
+
+                                }
+                                div1.appendChild(div2)
+                            }
+
+                        }
+                        div.append(div1)
+
+                    }
+
+                }
+                document.body.append(div)
+            }
+
+
+        })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--зробити файл users.html-->
+<!--з ендпоінту http://jsonplaceholder.typicode.com/users отримати всіх користувачів-->
+<!--вивести їх id + name списком та додати посилання з href = user-details.html?id=XXX (замість ХХХ - айді юзера)-->
+<!--при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів)
+отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX   ХХХ - айді користувача)-->
+
+<div class="target"></div>
+
+<script>
+    let target = document.getElementsByTagName('div')[0]
+    // let target=document.querySelector('.target')
+    fetch('https://jsonplaceholder.typicode.com/users')// do request to server
+        .then(info => info.json())//recive information object and open it...then i get json data from object
+        .then((users) => {
+
+            for (const user of users) {
+                let li = document.createElement('li')
+                let a=document.createElement('a')
+                a.innerText = user.id
+                a.href='details.html?id='+user.id
+                let a1=document.createElement('a')
+                a1.innerText=' '+user.name
+                li.append(a,a1)
+                target.append(li)
+
+            }
+        })//clear data
+</script>
+
+</body>
+</html>
